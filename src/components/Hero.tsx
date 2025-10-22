@@ -1,7 +1,7 @@
 import { Code2, Github, Mail, Sparkles, Terminal, BookOpen, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import profileImage from "@/assets/profile.jpg";
+import profileImage from "@/assets/swarnim-profile.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -118,13 +118,13 @@ const Hero = () => {
                 <Sparkles className="h-8 w-8 text-primary" />
               </div>
               
-              {/* Profile Image Container */}
-              <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-card/50 backdrop-blur-sm">
+              {/* Profile Image Container with Circular Mask */}
+              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-card/50 backdrop-blur-sm">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
                 <img
                   src={profileImage}
                   alt="Swarnim Poudel"
-                  className="w-full h-auto max-w-md object-cover relative z-10"
+                  className="w-full h-full object-cover relative z-10"
                 />
               </div>
 
