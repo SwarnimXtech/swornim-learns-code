@@ -46,12 +46,12 @@ const Contact = () => {
               <div className="space-y-6">
                 <a
                   href="mailto:swornimpoudel@gmail.com"
-                  className="inline-block"
+                  className="inline-block w-full max-w-md mx-auto"
                 >
-                  <Button size="lg" className="group shadow-xl hover:shadow-2xl text-lg px-8 py-6">
-                    <Mail className="mr-3 h-5 w-5" />
-                    swornimpoudel@gmail.com
-                    <Send className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <Button size="lg" className="group shadow-xl hover:shadow-2xl text-base md:text-lg px-4 py-4 md:px-8 md:py-6 w-full">
+                    <Mail className="mr-2 md:mr-3 h-5 w-5 flex-shrink-0" />
+                    <span className="truncate">swornimpoudel@gmail.com</span>
+                    <Send className="ml-2 md:ml-3 h-5 w-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
                 
